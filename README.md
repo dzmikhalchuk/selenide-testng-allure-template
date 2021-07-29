@@ -2,6 +2,7 @@
 
 Make sure you have the latest versions of the following installed:
 	Java Development Kit https://www.oracle.com/
+	Maven https://maven.apache.org/install.html
 
 ### Install Dependencies
 
