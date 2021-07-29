@@ -1,5 +1,7 @@
 package web;
 
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideWait;
 import com.codeborne.selenide.WebDriverRunner;
 import helpers.assertions.SoftAssert;
 import org.testng.annotations.AfterClass;
@@ -30,7 +32,7 @@ public class WikiTest extends BaseTest {
 
         mainPage.search("Einstein");
         testResults.assertEquals(mainPage.getTitle(), "Albert Einstein");
-        testResults.assertTrue(url().contains("/wiki/Albert_Einstein"), "Search result page contains incorrect URL");
+        testResults.assertTrue(url().contains("Einstein"), "Search result page contains incorrect URL");
         testResults.assertAll();
     }
 
